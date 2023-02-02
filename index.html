@@ -1,0 +1,45 @@
+<index.html>
+    <html lang="en">
+    <head>
+        <link 
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" 
+     rel="stylesheet"
+    />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <script>
+        function sessionselect() {
+        var mylist = document.getElementById("myList");
+        document.getElementById("session").value = mylist.options[mylist.selectedIndex].text;
+        }
+        </script>
+    <body>
+        <form>  
+            <b> Select a session of Congress</b>  
+            <select id = "myList" onchange = "sessionselect()" >  
+            <option> ---Choose Congress Session--- </option>  
+            <option> 109th Congress (2005-2007) </option>  
+            <option> 110th Congress (2007-2009)</option>  
+            <option> 111th Congress (2009-2011)</option>  
+            <option> 112th Congress (2011-2013) </option>  
+            <option> 113th Congress (2013-2015)</option>  
+            <option> 114th Congress (2015-2017)</option>
+            <option> 115th Congress (2017-2019) </option>  
+            <option> 116th Congress (2019-2021)</option>  
+            <option> 117th Congress (2021-2023)</option>
+            </select>  
+             
+            </form>  
+
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/region/usa/congressional/caLow.js"></script>
+        <div id="chartdiv">
+            <script type="text/javascript" src="camap.js"></script>
+        </div>
+        
+    </body>
+    </html>
