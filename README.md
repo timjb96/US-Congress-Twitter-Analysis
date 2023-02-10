@@ -4,11 +4,11 @@
 ### UC Davis Data Analytics Bootcamp
 
 ## Tools Used
-Data Gathering:
-Machine Learning:
-Visualizations:
-Amcharts Javascript Chart & Map Repository - https://www.amcharts.com/
-CSV to Javascript array converter: https://www.convertsimple.com/convert-csv-to-javascript-array/
+- Data Gathering:
+- Machine Learning:
+- Visualizations:
+ --Amcharts Javascript Chart & Map Repository - https://www.amcharts.com/
+ --CSV to Javascript array converter: https://www.convertsimple.com/convert-csv-to-javascript-array/
 
 ## Purpose of Study
 For our final project, our group will be investigating twitter usage in Congress. Specifically we wish to use Machine Learning to determine if a model can be generated to accurately predict the change in Social Media usage (focusing on Twitter) in Congress over time. We will use data from the first years of Twitter's existence to train a model to predict the increase in usage per candidates in later years. 
