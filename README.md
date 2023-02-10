@@ -20,7 +20,7 @@ Along with the generation of a predictive model that can be used to analyze soci
 ## How did we clean the data?
 
 ## Machine Learning
-
+We decided on a supervized machine learning model with logistic regression
 ## Visualizations
 
 ## Results, Conclusions
