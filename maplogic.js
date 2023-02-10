@@ -1,5 +1,4 @@
-
-//drop down selectors
+//var selector = select("sessionSelect");
 const selectElement = document.getElementById("sessions");
 
 selectElement.addEventListener("change", function() {
@@ -9,31 +8,28 @@ selectElement.addEventListener("change", function() {
 
 // Create map instance
 var chart = am4core.create("chartdiv", am4maps.MapChart);
-
 // Set map definition
 chart.geodata = am4geodata_region_usa_congressional_usaCongressionalLow;
-
 // Set projection
 chart.projection = new am4maps.projections.AlbersUsa();
-
 // Create map polygon series
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
-
 // Make map load polygon (like country names) data from GeoJSON
 polygonSeries.useGeodata = true;
 
 // Configure series
 var polygonTemplate = polygonSeries.mapPolygons.template;
 polygonTemplate.tooltipText = "{STATENAME} {name} , District ID  {id}";
-
 polygonTemplate.fill = am4core.color("#74B266");
-
 // Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
 hs.properties.fill = am4core.color("#367B25");
 
 //import .csv array
 const congdata = new Array ("output.js");
+
+//import charts data
+const amdata = new Array ("usaCongressionalLow.js");
 
 //function to change w dropdown
 function sessionchange(sessionSelect) {
@@ -42,12 +38,10 @@ function sessionchange(sessionSelect) {
     }
 };
 
-//get the geoJSON data
-//let geojsdata = "https://www.amcharts.com/lib/4/geodata/region/usa/congressional/usaCongressionalLow.js"
-//d3.json(geojsdata).then(function(data) {
-//    console.log(data) 
-//});
-//function to highlight twitter if in congress
+// we could also do a heatmap for each state, and a pop up that displays a count of districts with and without twitter - which is easier to code?
+
+
+//function to highlight if district has a twitter
 function twitcolor109(JoinedOn, StateDistID, id) {
     if (JoinedOn > 2005 && JoinedOn < 2008 && StateDistID == id ) {
      console.log("first if")
@@ -60,4 +54,6 @@ function twitcolor109(JoinedOn, StateDistID, id) {
 //read in data 
 //apply data to the districts within amcharts- how to relate the two?
 //style output
+
+
 
