@@ -16,12 +16,12 @@ For our final project, our group will be investigating Twitter usage in Congress
 Along with the generation of a predictive model that can be used to analyze social media usage changes of other applications besides Twitter, we aim to also create visualizations that demonstrate the different demographics among Congressional Twitter users and how the presence of a twitter account can affect re-election. 
 
 ## Sources of Data
-List of Congressional Members: www.congress.gov
-Specific search used to gather information: https://www.congress.gov/search?pageSize=250&q=%7B%22source%22%3A%22members%22%2C%22congress%22%3A%5B%22118%22%2C%22117%22%2C%22116%22%2C%22112%22%2C%22113%22%2C%22114%22%2C%22115%22%2C%22111%22%2C%22109%22%2C110%5D%7D
-Intial list of twitter handles: https://pressgallery.house.gov/member-data/members-official-twitter-handles
-Twitter website: www.twitter.com
-State Abreviations: https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/appendix_a.html
-Amcharts State and District ID: https://www.amcharts.com/docs/v4/
+List of Congressional Members: www.congress.gov</br>
+Specific search used to gather information: https://www.congress.gov/search?pageSize=250&q=%7B%22source%22%3A%22members%22%2C%22congress%22%3A%5B%22118%22%2C%22117%22%2C%22116%22%2C%22112%22%2C%22113%22%2C%22114%22%2C%22115%22%2C%22111%22%2C%22109%22%2C110%5D%7D </br>
+Intial list of twitter handles: https://pressgallery.house.gov/member-data/members-official-twitter-handles </br>
+Twitter website: www.twitter.com </br>
+State Abreviations: https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/appendix_a.html </br>
+Amcharts State and District ID: https://www.amcharts.com/docs/v4/ </br>
 
 # How did we clean the data?
 Using the data provided by the Congress website only a few columns were provided (Name, URL, State,	District, Party, Terms). For the scope of our research several factors needed to be researched, Date of Birth, Gender, Twitter Handle, Date the Twitter account was created. To find the date of birth for a specific Congress person the data provides a specific website created for each member, using the current Speaker of the House for the 118 Congress (Kevin McCarthy - R CA20th), here is the specific website: 
