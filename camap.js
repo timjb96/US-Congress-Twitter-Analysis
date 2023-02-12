@@ -2,7 +2,7 @@
 var chart = am4core.create("chartdiv", am4maps.MapChart);
 
 // Set map definition
-chart.geodata = am4geodata_region_usa_congressional_caLow;
+chart.geodata = am4geodata_region_usa_congressional_usaCountiesLow ;
 
 // Set projection
 chart.projection = new am4maps.projections.Miller();
