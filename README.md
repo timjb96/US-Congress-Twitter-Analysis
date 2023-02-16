@@ -7,8 +7,8 @@
 - Data Gathering:
 - Machine Learning:
 - Visualizations:
-- > Amcharts Javascript Chart & Map Repository - https://www.amcharts.com/
-- > CSV to Javascript array converter: https://www.convertsimple.com/convert-csv-to-javascript-array/
+- Amcharts Javascript Chart & Map Repository - https://www.amcharts.com/
+- CSV to Javascript array converter: https://www.convertsimple.com/convert-csv-to-javascript-array/
 
 ## Purpose of Study
 For our final project, our group will be investigating Twitter usage in Congress. Specifically, we wish to use machine learning to determine whether a model can be generated to accurately predict social media adoption (focusing on Twitter) in Congress over time. We will use data from the first years of Twitter's existence to train a model to predict the increase in usage per candidates in later years. 
