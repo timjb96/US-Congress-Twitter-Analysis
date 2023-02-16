@@ -39,18 +39,18 @@ Finding Twitter accounts not linked in the Congressional website: Only a small n
 # Additional Data wrangling: 
 There were additional steps needed to complete the data cleaning process. 
 * Update a few users and remove non UTC-8 characters found in the name. 
-Cardenas, Tony
-Sanchez, Linda T.
-Gonzalez-Colon, Jenniffer
-* Create UniqueID's for each person. This was created using the first two letters in the last name, the first letter in the first name, adding a "-", then combining the State abrivation along with the district they supported. I.E. McK-CA20 for Kevin McCarthy.
+</br>Cardenas, Tony
+</br>Sanchez, Linda T.
+</br>Gonzalez-Colon, Jenniffer
+* Create UniqueID's for each person. This was created using the first two letters in the last name, the first letter in the first name, adding a "-", then combining the State abrivation along with the district they supported. I.E. McK-CA20 for Kevin McCarthy. </br>
 NOTE: An exception was found for when a Father / Son congress members inside the same district in New Jersey. A Jr and Sr were added to the names to keep the records seperated. 
 * Add an updated StateDistID column. This column represents a combination of the State ID # used by AMCharts, & the district ID number
 * Remove Senate Members: There was a small sample group of electected officals which had a Senate seat but had served as a member of Congress before 2007, these users were removed. 
 * Non consecutive Congressional Sessions: Out of the 1134 records in this data set, 21 members had a break between their 1st term and the 2nd term (I.E. Bass, Charles F, 1995-2007, 2011-2013), 2 members had 3 different terms (Shea-Porter, Carol - 2007-2011, 2013-2015, 2017-2019 & Kirkpatrick, Ann - 2009-2011, 2013-2017, 2019-2023)
-* Members which served in different districts on different terms: There were a few Members which served at various times in different districts in different sessions. The data provided by the website reflects the "latest" District. 
-I.E. Hilda L. Solis
-California, District 32 108th-111th (2003-2009)
-California, District 31 107th (2001-2003)
+* Members which served in different districts on different terms: There were a few Members which served at various times in different districts in different sessions. The data provided by the website reflects the "latest" District. </br>
+I.E. Hilda L. Solis</br>
+California, District 32 108th-111th (2003-2009)</br>
+California, District 31 107th (2001-2003)</br>
 
 ## How did we clean the data?
 
