@@ -18,14 +18,14 @@ Along with the generation of a predictive model that can be used to analyze soci
 ## Sources of Data
 List of Congressional Members: www.congress.gov</br>
 Specific search used to gather information: [US Congressional Site](https://www.congress.gov/search?pageSize=250&q=%7B%22source%22%3A%22members%22%2C%22congress%22%3A%5B%22118%22%2C%22117%22%2C%22116%22%2C%22112%22%2C%22113%22%2C%22114%22%2C%22115%22%2C%22111%22%2C%22109%22%2C110%5D%7D) </br>
-Intial list of twitter handles: [US https://pressgallery.house.gov/member-data/members-official-twitter-handles </br>
+Intial list of twitter handles: [Press Gallery Twitter List](https://pressgallery.house.gov/member-data/members-official-twitter-handles) </br>
 Twitter website: www.twitter.com </br>
-State Abreviations: https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/appendix_a.html </br>
-Amcharts State and District ID: https://www.amcharts.com/docs/v4/ </br>
+State Abreviations: [FAA State List](https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/appendix_a.html) </br>
+Amcharts State and District ID: [AMCharts](https://www.amcharts.com/docs/v4/)</br>
 
 # How did we clean the data?
 Using the data provided by the Congress website only a few columns were provided (Name, URL, State,	District, Party, Terms). For the scope of our research several factors needed to be researched, Date of Birth, Gender, Twitter Handle, Date the Twitter account was created. To find the date of birth for a specific Congress person the data provides a specific website created for each member, using the current Speaker of the House for the 118 Congress (Kevin McCarthy - R CA20th), here is the specific website: [Kevin McCarty](https://www.congress.gov/member/kevin-mccarthy/M001165) </br>
-*Date of Birth: At the bottom of the page a section for "read biography" is avaiable to select, using the information provided in the new page the Date of Birth is avaible. This information was manually searched for each row in the dataset. A public list of the information was not readaliy available. 
+* Date of Birth: At the bottom of the page a section for "read biography" is avaiable to select, using the information provided in the new page the Date of Birth is avaible. This information was manually searched for each row in the dataset. A public list of the information was not readaliy available. 
 * Gender: Using the picture provided by the Congressional website the Gender was identified using the avaiable image. An additional search was conducted to identify any members of the LGBT+ community which identify as anything other than their birth gender, at the time of this writing (02/10/2023) none were found. Any errors with distinction of Male / Female were made without any malaous. 
 Note: Additional Research Source: [Current Congressional List of LGBT Members](https://en.wikipedia.org/wiki/List_of_LGBT_members_of_the_United_States_Congress)</br>
 * Twitter Handle: Using the same example for Speaker McCarthy, a personal website is linked to the congressional website. This new website (https://kevinmccarthy.house.gov/contact) has a link to the Twitter homepage. Using the information provided by Twitter, the handle is located under the picture of the indivudual user. </br>
