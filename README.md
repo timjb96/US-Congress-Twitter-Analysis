@@ -9,6 +9,7 @@
 - Visualizations:
 - Amcharts Javascript Chart & Map Repository - https://www.amcharts.com/
 - CSV to Javascript array converter: https://www.convertsimple.com/convert-csv-to-javascript-array/
+- Tableau Public
 
 ## Purpose of Study
 For our final project, our group will be investigating Twitter usage in Congress. Specifically, we wish to use machine learning to determine whether a model can be generated to accurately predict social media adoption (focusing on Twitter) in Congress over time. We will use data from the first years of Twitter's existence to train a model to predict the increase in usage per candidates in later years. 
@@ -26,7 +27,7 @@ Amcharts State and District ID: [AMCharts](https://www.amcharts.com/docs/v4/)</b
 # How did we clean the data?
 Using the data provided by the Congress website only a few columns were provided (Name, URL, State,	District, Party, Terms). For the scope of our research several factors needed to be researched, Date of Birth, Gender, Twitter Handle, Date the Twitter account was created. To find the date of birth for a specific Congress person the data provides a specific website created for each member, using the current Speaker of the House for the 118 Congress (Kevin McCarthy - R CA20th), here is the specific website: [Kevin McCarty](https://www.congress.gov/member/kevin-mccarthy/M001165) </br>
 * Date of Birth: At the bottom of the page a section for "read biography" is avaiable to select, using the information provided in the new page the Date of Birth is avaible. This information was manually searched for each row in the dataset. A public list of the information was not readaliy available. 
-* Gender: Using the picture provided by the Congressional website the Gender was identified using the avaiable image. An additional search was conducted to identify any members of the LGBT+ community which identify as anything other than their birth gender, at the time of this writing (02/10/2023) none were found. Any errors with distinction of Male / Female were made without any malaous. </br>
+* Gender: Using the picture provided by the Congressional website the Gender was identified using the avaiable image. Additionally, a search was conducted to determine if any of members of Congress identified outside of the Gender Binary of Male-Female. We did not find any record of this, and thus Gender is presented in our project as Male/Female, based on how the Congresspeople express their identities in public and on Twitter.  </br>
 Note: Additional Research Source: [Current Congressional List of LGBT Members](https://en.wikipedia.org/wiki/List_of_LGBT_members_of_the_United_States_Congress)</br>
 * Twitter Handle: Using the same example for Speaker McCarthy, a personal website is linked to the congressional website. This new website (https://kevinmccarthy.house.gov/contact) has a link to the Twitter homepage. Using the information provided by Twitter, the handle is located under the picture of the indivudual user. </br>
 * Date the account was created: Twitter provides a month and year combiniatnon that the account is created. For the purposes of this analysis the "day" was assumed as the 1st of whatever month and year combination was provided. In the example for Speak McCarthy, the date 01/01/2009 was assumed. 
@@ -57,5 +58,12 @@ California, District 31 107th (2001-2003)</br>
 ## Machine Learning
 We decided on a supervized machine learning model with logistic regression
 ## Visualizations
+For our Visualizations, we wanted to demonstrate the changes in Twitter usage over time, by creating dashboards that demonstrated the demographic breakdown for each Congress Session. Within these dashboards would be displayed charts to visualize the number of Twitter Adoptees per session, broken down by Party, State, and Gender, as well as total Twitter usage within that congress session (including Twitter accounts created before that specific session) broken down by party and gender. 
+Our initial goal was to do this with Javascript, specifically using the amcharts library to generate visualizations to correspond with a Congressional District Map, which we found from the amcharts library. However, using Javascript for this purpose entailed several document transformations, a complicated object structure, and a lack of organizational functionality that was necessary to create the sorts of visuals we wanted to.
+As a result, we decided partway through the project to instead utilize Tableau. After a basic trial run with our data sources, Tableau proved to be much more straightforward for the relatively simple analyses we were attempting. Due to our ever deepening understanding of our data, Tableau also allowed us to react to any realizations regarding our data in real time. Since the charts we created are relatively simple and do not require complex functionality or calculations, we deemed Tableau to be the better technology for our purposes. 
+A view of our dashboard (currently in draft mode) can be found below:
 
+![Screen Shot 2023-02-16 at 8 24 21 PM](https://user-images.githubusercontent.com/112847821/219549030-e8b95c86-306c-4bcb-a67c-8e92f454e660.png)
+
+Had we had more time, it would have been ideal to also create a Javascript map using the amcharts library to provide more specific visualizations regarding actual state and geographical distributions, which would have made for interesting data to analyze cultural attitudes towards Twitter in the early years of its adoption. 
 ## Results, Conclusions
