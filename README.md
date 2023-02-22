@@ -55,7 +55,7 @@ California, District 31 107th (2001-2003)</br>
 
 
 ## Machine Learning
-We decided on a supervized machine learning model with logistic regression
+We decided on a supervized machine learning model with logistic regression. Rather than utilizing train_test_split to divide our data, we decided to iterate the model through the congressional sessions, starting from the congressional session in which Twitter was first created and ending on the current session. As the model was iterated, the session at the time was treated as the testing data, with all prior sessions being combined into the training data for the model. In order to do this, the data had to be cleaned further after being imported into the model. The some of the examined features, gender and party affiliation, needed to be converted into numerical values that could be inputted into the model. 
 ## Visualizations
 For our Visualizations, we wanted to demonstrate the changes in Twitter usage over time, by creating dashboards that demonstrated the demographic breakdown for each Congress Session. Within these dashboards would be displayed charts to visualize the number of Twitter Adoptees per session, broken down by Party, State, and Gender, as well as total Twitter usage within that congress session (including Twitter accounts created before that specific session) broken down by party and gender. 
 
