@@ -76,7 +76,7 @@ Had we had more time, it would have been ideal to also create a Javascript map u
 
 ## Results, Conclusions
 
-The model for session 111 predicts that all congressional members do not have a Twitter account, leading to a low scores in precision and sensitivity. With session 112, the model starts to predict members having a Twitter account. In session 113, notably, the model significantly overpredicts members having Twitter accounts, with subsequent sessions having a lower percentage of false positives.
+For the models, the existence of a Twitter account was counted as a 1, with 0 representing a lack of a Twitter account. The model for session 111 predicts that all congressional members do not have a Twitter account, leading to a low scores in precision and sensitivity. With session 112, the model starts to predict members having a Twitter account. In session 113, notably, the model significantly overpredicts members having Twitter accounts, with subsequent sessions having a lower percentage of false positives. 
 
 Session 111:
 
