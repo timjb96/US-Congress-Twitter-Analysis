@@ -55,7 +55,7 @@ California, District 31 107th (2001-2003)</br>
 
 
 ## Machine Learning
-We decided on a supervized machine learning model with logistic regression. Rather than utilizing train_test_split to divide our data, we decided to iterate the model through the congressional sessions, starting from the congressional session in which Twitter was first created and ending on the current session. As the model was iterated, the session at the time was treated as the testing data, with all prior sessions being combined into the training data for the model. In order to do this, the data had to be cleaned further after being imported into the model. The some of the examined features, gender and party affiliation, needed to be converted into numerical values that could be inputted into the model. The data was then separated by congressional session to be input into the model. Congressional session 109 had 0 Twitter users, so a model trained on it to predict congressional session 110 would not be of use, as it would preidct all congressional members to not have a Twitter acount. Thus, the first machine learning model incorporated sessions 109 and 110 as training data to predict session 111.
+We decided on a supervized machine learning model with logistic regression. Rather than utilizing train_test_split to divide our data, we decided to iterate the model through the congressional sessions, starting from the congressional session in which Twitter was first created and ending on the current session. As the model was iterated, the session at the time was treated as the testing data, with all prior sessions being combined into the training data for the model. In order to do this, the data had to be cleaned further after being imported into the model. The some of the examined features, gender and party affiliation, needed to be converted into numerical values that could be inputted into the model. The data was then separated by congressional session to be input into the model. Congressional session 109 had 0 Twitter users, so a model trained on it to predict congressional session 110 would not be of use, as it would preidct all congressional members to not have a Twitter acount. Thus, the first machine learning model incorporated sessions 109 and 110 as training data to predict session 111. This was then iterated through the rest of the congressional sessions, using a concatenation of previous sessions as training data.
 ## Visualizations
 For our Visualizations, we wanted to demonstrate the changes in Twitter usage over time, by creating dashboards that demonstrated the demographic breakdown for each Congress Session. Within these dashboards would be displayed charts to visualize the number of Twitter Adoptees per session, broken down by Party, State, and Gender, as well as total Twitter usage within that congress session (including Twitter accounts created before that specific session) broken down by party and gender. 
 
@@ -75,6 +75,31 @@ Additionally, there are two bar charts- one shows the overall Twitter usage in t
 Had we had more time, it would have been ideal to also create a Javascript map using the amcharts library to provide more specific visualizations regarding actual state and geographical distributions, which would have made for interesting data to analyze cultural attitudes towards Twitter in the early years of its adoption. 
 
 ## Results, Conclusions
+
+Session 111:
+
+![112 Confusion Matrix](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/111cm.PNG)
+![112 Classification Report](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/111cr.PNG)
+
+Session 112:
+
+![112 Confusion Matrix](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/112cm.PNG)
+![112 Classification Report](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/112cr.PNG)
+
+Session 113:
+
+![113 Confusion Matrix](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/113cm.PNG)
+![113 Classification Report](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/113cr.PNG)
+
+Session 114:
+
+![114 Confusion Matrix](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/114cm.PNG)
+![114 Classification Report](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/114cr.PNG)
+
+Session 115:
+
+![115 Confusion Matrix](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/115cm.PNG)
+![115 Classification Report](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/115cr.PNG)
 
 Based on the results of our Machine Learning model, we determined that a machine learning model could be generated with the given data that was able to predict twitter adoption, with greater accuracy on recent years. It should be noted, however, that Twitter adoption is somewhat ubiquitous in recent times, so the model itself should be heavily biased towards predicting an existance of a twitter account for any given representative. In order to make a better model for twitter alone, more demographic features should be taken, such as an indicator of whether the representative's congressional district is largely urban or rural or some indicator of how contested the congressional seat may be in an election.
 
