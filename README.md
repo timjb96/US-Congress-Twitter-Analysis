@@ -101,6 +101,23 @@ Session 115:
 ![115 Confusion Matrix](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/115cm.PNG)
 ![115 Classification Report](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/115cr.PNG)
 
+Session 116:
+
+![116 Confusion Matrix](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/116cm.PNG)
+![116 Classification Report](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/116cr.PNG)
+
+Session 117:
+
+![117 Confusion Matrix](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/117cm.PNG)
+![117 Classification Report](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/117cr.PNG)
+
+Session 118:
+
+![118 Confusion Matrix](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/118cm.PNG)
+![118 Classification Report](https://github.com/timjb96/US-Congress-Twitter-Analysis/blob/main/Images/118cr.PNG)
+
+
+
 Based on the results of our Machine Learning model, we determined that a machine learning model could be generated with the given data that was able to predict twitter adoption, with greater accuracy on recent years. It should be noted, however, that Twitter adoption is somewhat ubiquitous in recent times, so the model itself should be heavily biased towards predicting an existance of a twitter account for any given representative. In order to make a better model for twitter alone, more demographic features should be taken, such as an indicator of whether the representative's congressional district is largely urban or rural or some indicator of how contested the congressional seat may be in an election.
 
 The visualizations demonstrate that after an initially high proportion of Congress people using twitter in the first congress session after which it was created (110th Session, as Twitter was created in 2006 during the 109th), there is a drop in the 111th, and then steady increase over the next two sessions (112 and 113) until it reaches the concentration it does in the 114th session, which started in 2015. So from 2006 to 2015, in about 9 years, Twitter became massively used within Congress, and that concentration has remained relatively stable since then. There are still, and appear to always be, some holdouts who will not use Twitter in Congress, although they are a definite minority. This growth can be seen below:
