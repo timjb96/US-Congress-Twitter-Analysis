@@ -5,7 +5,7 @@
 
 ## Tools Used
 - Data Gathering:
-- Machine Learning: Scikit-learn, Logistic Regression
+- Machine Learning: Jupyter Notebook, Scikit-learn, Logistic Regression
 - Visualizations:
 - Amcharts Javascript Chart & Map Repository - https://www.amcharts.com/
 - CSV to Javascript array converter: https://www.convertsimple.com/convert-csv-to-javascript-array/
