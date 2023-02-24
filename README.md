@@ -5,7 +5,7 @@
 
 ## Tools Used
 - Data Gathering:
-- Machine Learning:
+- Machine Learning: Scikit-learn, Logistic Regression
 - Visualizations:
 - Amcharts Javascript Chart & Map Repository - https://www.amcharts.com/
 - CSV to Javascript array converter: https://www.convertsimple.com/convert-csv-to-javascript-array/
@@ -55,7 +55,7 @@ California, District 31 107th (2001-2003)</br>
 
 
 ## Machine Learning
-We decided on a supervized machine learning model with logistic regression. Rather than utilizing train_test_split to divide our data, we decided to iterate the model through the congressional sessions, starting from the congressional session in which Twitter was first created and ending on the current session. As the model was iterated, the session at the time was treated as the testing data, with all prior sessions being combined into the training data for the model. In order to do this, the data had to be cleaned further after being imported into the model. The some of the examined features, gender and party affiliation, needed to be converted into numerical values that could be inputted into the model. 
+We decided on a supervized machine learning model with logistic regression. Rather than utilizing train_test_split to divide our data, we decided to iterate the model through the congressional sessions, starting from the congressional session in which Twitter was first created and ending on the current session. As the model was iterated, the session at the time was treated as the testing data, with all prior sessions being combined into the training data for the model. In order to do this, the data had to be cleaned further after being imported into the model. The some of the examined features, gender and party affiliation, needed to be converted into numerical values that could be inputted into the model. The data was then separated by congressional session to be input into the model. Congressional session 109 had 0 Twitter users, so a model trained on it to predict congressional session 110 would not be of use, as it would preidct all congressional members to not have a Twitter acount. Thus, the first machine learning model incorporated sessions 109 and 110 as training data to predict session 111.
 ## Visualizations
 For our Visualizations, we wanted to demonstrate the changes in Twitter usage over time, by creating dashboards that demonstrated the demographic breakdown for each Congress Session. Within these dashboards would be displayed charts to visualize the number of Twitter Adoptees per session, broken down by Party, State, and Gender, as well as total Twitter usage within that congress session (including Twitter accounts created before that specific session) broken down by party and gender. 
 
@@ -76,7 +76,7 @@ Had we had more time, it would have been ideal to also create a Javascript map u
 
 ## Results, Conclusions
 
-Based on the results of our Machine Learning model, we determined the following regarding whether or not the data we have was enough to create a useful model to predict social media adoption:
+Based on the results of our Machine Learning model, we determined that a machine learning model could be generated with the given data that was able to predict twitter adoption, with greater accuracy on recent years. It should be noted, however, that Twitter adoption is somewhat ubiquitous in recent times, so the model itself should be heavily biased towards predicting an existance of a twitter account for any given representative. In order to make a better model for twitter alone, more demographic features should be taken, such as an indicator of whether the representative's congressional district is largely urban or rural or some indicator of how contested the congressional seat may be in an election.
 
 The visualizations demonstrate that after an initially high proportion of Congress people using twitter in the first congress session after which it was created (110th Session, as Twitter was created in 2006 during the 109th), there is a drop in the 111th, and then steady increase over the next two sessions (112 and 113) until it reaches the concentration it does in the 114th session, which started in 2015. So from 2006 to 2015, in about 9 years, Twitter became massively used within Congress, and that concentration has remained relatively stable since then. There are still, and appear to always be, some holdouts who will not use Twitter in Congress, although they are a definite minority. This growth can be seen below:
 
