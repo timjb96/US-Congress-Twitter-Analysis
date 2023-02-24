@@ -64,7 +64,7 @@ Our initial goal was to do this with Javascript, specifically using the amcharts
 As a result, we decided partway through the project to instead utilize Tableau. After a basic trial run with our data sources, Tableau proved to be much more straightforward for the relatively simple analyses we were attempting. Due to our ever deepening understanding of our data, Tableau also allowed us to react to any realizations regarding our data in real time. Since the charts we created are relatively simple and do not require complex functionality or calculations, we deemed Tableau to be the better technology for our purposes. Our Dashboard can be seen below:
 
 
-![Screen Shot 2023-02-21 at 3 43 48 PM](https://user-images.githubusercontent.com/112847821/220484046-023941dd-f5f7-4abe-ab15-e52661d7c6eb.png)
+![Screen Shot 2023-02-23 at 4 41 02 PM](https://user-images.githubusercontent.com/112847821/221063743-f2ced6e7-5560-469c-ac68-a59e2963f2ed.png)
 
 
 We created 4 charts for our Dashboard, to be featured for each Congressional Session. There are two pie charts, one to show the proportions of each party's Twitter adoption for that session, and one to show how many Congresspeople have or do not have Twitter accounts overall within that session. The pie chart to measure party adoption allows us to determine how much party contributed to a congressperson's decision to adopt Twitter, or how many individuals within a congress session are new to congress, and thus creating new Twitter accounts. The chart to show overall Twitter usage throughout congress shows us both the Twitter accounts that were created in that session, as well as any congresspeople that had twitter during that session, but started their congressional twitter accounts earlier. 
@@ -80,15 +80,15 @@ Based on the results of our Machine Learning model, we determined that a machine
 
 The visualizations demonstrate that after an initially high proportion of Congress people using twitter in the first congress session after which it was created (110th Session, as Twitter was created in 2006 during the 109th), there is a drop in the 111th, and then steady increase over the next two sessions (112 and 113) until it reaches the concentration it does in the 114th session, which started in 2015. So from 2006 to 2015, in about 9 years, Twitter became massively used within Congress, and that concentration has remained relatively stable since then. There are still, and appear to always be, some holdouts who will not use Twitter in Congress, although they are a definite minority. This growth can be seen below:
 
-![Screen Shot 2023-02-21 at 3 44 37 PM](https://user-images.githubusercontent.com/112847821/220484153-651d07c7-b075-41f2-8276-6a380275a401.png)
+![Screen Shot 2023-02-23 at 4 39 14 PM](https://user-images.githubusercontent.com/112847821/221063506-0a3d3f92-7a72-405a-aea0-7d779879a878.png)
 
-![Screen Shot 2023-02-21 at 3 44 59 PM](https://user-images.githubusercontent.com/112847821/220484206-4e7565d9-e0e3-4bb5-9774-5179acf7498d.png)
+![Screen Shot 2023-02-23 at 4 39 40 PM](https://user-images.githubusercontent.com/112847821/221063563-c2d4f36a-b588-47bd-a90d-50f5eee1b11e.png)
 
-![Screen Shot 2023-02-21 at 3 45 26 PM](https://user-images.githubusercontent.com/112847821/220484249-20e9c711-22e8-4f1a-abd7-b61630450959.png)
+![Screen Shot 2023-02-23 at 4 40 05 PM](https://user-images.githubusercontent.com/112847821/221063622-7acd94c1-584c-46eb-9709-979ec91fb27f.png)
 
-![Screen Shot 2023-02-21 at 3 45 47 PM](https://user-images.githubusercontent.com/112847821/220484298-c4ce784f-0196-4d03-9e50-4eb64d852c4e.png)
+![Screen Shot 2023-02-23 at 4 40 21 PM](https://user-images.githubusercontent.com/112847821/221063657-7be6552d-dad6-44cd-b951-bc277fe497fa.png)
 
-![Screen Shot 2023-02-21 at 3 46 05 PM](https://user-images.githubusercontent.com/112847821/220484347-bf7092d3-1713-430e-9300-b3bedee91323.png)
+![Screen Shot 2023-02-23 at 4 40 42 PM](https://user-images.githubusercontent.com/112847821/221063696-258126f6-f3a3-4ea5-aa73-983e9cb7e8d5.png)
 
 
 The demographic charts show that twitter usage and adoption within a party largely has to do with the party demographics itself, and match up with what we can learn from demographics within the Democratic or Republican parties themselves. Twitter adoption rates seem to primarily be affected by which party received more new members of congress, especially in later sessions, as this proportion swings back and forth. Additionally, state size seems to be an accurate predictor of comparative number of congresspeople who would join in a given state in a given session. 
